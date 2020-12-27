@@ -5,10 +5,12 @@ const title = document.getElementById("title");
 const author = document.getElementById("author");
 const pages = document.getElementById("pages");
 
-function Book(title, author, pages) {
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
+class Book {
+  constructor(title, author, pages) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+  }
 }
 
 function addBookToLibrary(bookName) {
